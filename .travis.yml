@@ -1,5 +1,2 @@
-language: groovy
-jdk:
-  - openjdk7
 after_success:
   - curl www.bintray.com
