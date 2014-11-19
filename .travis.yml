@@ -1,4 +1,5 @@
 language: groovy
 script:
-  - curl -T bintray.png -uophirh:$KEY 'https://api.bintray.com/content/ophirh/demo/tr_demo/$TRAVIS_JOB_NUMBER/$TRAVIS_JOB_NUMBER/bintray.png;publish=1'
+  - curl -T bintray.png -uophirh:$KEY https://api.bintray.com/content/ophirh/demo/tr_demo/$TRAVIS_JOB_NUMBER/$TRAVIS_JOB_NUMBER/bintray.png
+  - curl -XPOST -uophirh:$KEY https://api.bintray.com/content/ophirh/demo/tr_demo/$TRAVIS_JOB_NUMBER/publish
 
