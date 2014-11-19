@@ -1,5 +1,5 @@
 language: groovy
 script:
   - curl -XGET bintray.com
-  - curl -T bintray.png -uophirh:$KEY https://api.bintray.com/content/ophirh/demo/tr_demo/$TRAVIS_JOB_ID/bintray.png;publish=1
+  - curl -T bintray.png -uophirh:$KEY 'https://api.bintray.com/content/ophirh/demo/tr_demo/$TRAVIS_JOB_ID/bintray.png;publish=1'
 
